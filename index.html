@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Информация о пациентах</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="single">
+			<div class="caption">
+				Информация о пациенте
+			</div>
+			<div class="items">
+				<div class="item">
+					<span class="label">Фио:</span> <span class="value"></span>
+				</div>
+				<div class="item">
+					<span class="label">Возраст:</span> <span class="value"></span>
+				</div>
+				<div class="item">
+					<span class="label">Диагноз:</span> <span class="value"></span>
+				</div>
+			</div>
+		</div>
+		<div class="multiple">
+			<div class="pager">
+				<div class="control active">
+					Присутствуют <span class="count"></span>
+				</div>
+				<div class="control">
+					Выбывшие <span class="count"></span>
+				</div>
+			</div>
+			<div class="groups">
+				<div class="group current active">
+					<table>
+						<tr>
+							<th>
+								№ ИБ
+							</th>
+							<th>
+								ФИО
+							</th>
+							<th>
+								Палата
+							</th>
+						</tr>
+					</table>
+				</div>
+				<div class="group old">
+					<table>
+						<tr>
+							<th>
+								№ ИБ
+							</th>
+							<th>
+								ФИО
+							</th>
+							<th>
+								Причина выбытия
+							</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

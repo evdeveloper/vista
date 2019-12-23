@@ -1,0 +1,90 @@
+.wrapper {
+	width: 1200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #000;
+	padding: 15px;
+	margin: 0 auto;
+}
+.wrapper,
+.wrapper * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrapper img {
+	max-width: 100%;
+}
+.wrapper .single,
+.wrapper .multiple {
+	float: left;
+	width: 60%;
+	border: 1px solid #ddd;
+}
+.wrapper .single {
+	width: 38%;
+	margin-right: 2%;
+}
+.wrapper .single .caption {
+	color: #fff;
+	background-color: #39C;
+	padding: 10px;
+}
+.wrapper .single .items .item {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+.wrapper .multiple .pager .control {
+	position: relative;
+	cursor: pointer;
+	float: left;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.wrapper .multiple .pager .control.active {
+	color: #39C;
+}
+.wrapper .multiple .pager .control::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #39C;
+	display: none;
+}
+.wrapper .multiple .pager .control.active::before {
+	display: block;
+}
+.wrapper .multiple .groups {
+	clear: both;
+}
+.wrapper .multiple .groups .group {
+	display: none;
+}
+.wrapper .multiple .groups .group.active {
+	display: block;
+}
+.wrapper .multiple .groups .group table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.wrapper .multiple .groups .group table th,
+.wrapper .multiple .groups .group table td {
+	width: 33.33%;
+	text-align: left;
+	font-weight: 400;
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+.wrapper .multiple .groups .group table th {
+	color: #999;
+}
+.wrapper .multiple .groups .group table td {
+	cursor: pointer;
+}
+.wrapper .multiple .groups .group table tr.active td {
+	background-color: #eee;
+}
